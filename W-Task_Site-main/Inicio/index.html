@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="ImagensInicio/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styleBanner.css">
+    <link rel="stylesheet" href="styleGeral.css">
+    <link rel="stylesheet" href="styleNavBar.css">
+
+</head>
+<body>
+    
+    <nav>
+        <img src="ImagensInicio/Logo_W_Task (2).png" alt="Logo_W-Task">
+        <div id="menu">
+            <a class="ItensMenu" id="sobreNos" href="#banner" onclick='alterarSobreNos()'>Sobre Nós</a>
+            
+            <a class="ItensMenu" id="contatos" href="" onclick='alterarContatos()'>Contato</a>
+            <a class="ItensMenu" id="clientes" href="#CorpoPortifolio" onclick='alterarClientes()'>Clientes</a>
+        </div>
+
+
+        <div id="paralelogramo"></div>
+        <a id="TrabalheConosco" href="">Trabalhe Conosco</a>
+    </nav>
+    <div id="banner">
+        <div id="LinhaDiagonal" ></div>
+        <p id="textoSobreNos">Nós Somos a W-Task, Empresa Tecnológica de Criação de Sites e Simuladores 3D Implantados neles. Brasileira, Nossos Valores são a Construção e Estimulação da Criatividade e Sua Usabilidade.</p>
+        <div id="LinhaHorizontal"></div>
+</div>
+
+    <div id="CorpoPortifolio">
+
+        <div id="TituloPortifolio">
+            <h1>Fazemos Sites Para</h1>
+        </div>
+        <div id="DivPortMain">
+            <div id="DivPort1" class="DivPort">
+                <img src="ImagensInicio/imgDivPort1.png" alt="E-commerce">
+                <div class="DivPortConteudo" id="DivPortConteudo1">
+                    <h2>E-COMMERCE</h2>
+                    <div id="LinhaHrzlPort1" class="LinhaHrzlPort"></div>
+                    <div id="LinhaHrzlPort2" class="LinhaHrzlPort"></div>
+
+                    <div class="DivPortBotao">
+                        
+                        <button onmouseover="MouseNoBotaoPort(this)"
+                        onmouseout="MouseForaBotaoPort(this)" type="button" onclick="AbrirFormulario()">Pedir Site</button>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div id="DivPort2" class="DivPort">
+                <img src="ImagensInicio/imgDivPort1.png" alt="E-commerce">
+                <div class="DivPortConteudo" id="DivPortConteudo2">
+                    <h2>INSTITUIÇÕES DE ENSINO</h2>
+                    <div id="LinhaHrzlPort3" class="LinhaHrzlPort"></div>
+                    <div id="LinhaHrzlPort4" class="LinhaHrzlPort"></div>
+
+                    <div class="DivPortBotao">
+                        <button onmouseover="MouseNoBotaoPort(this)"
+                        onmouseout="MouseForaBotaoPort(this)">Pedir Site</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="DivPort3" class="DivPort">
+                <img src="ImagensInicio/imgDivPort1.png" alt="E-commerce">
+                <div class="DivPortConteudo" id="DivPortConteudo3">
+                    <h2>ENTRE OUTROS</h2>
+                    <div id="LinhaHrzlPort5" class="LinhaHrzlPort"></div>
+                    <div id="LinhaHrzlPort6" class="LinhaHrzlPort"></div>
+
+                    <div class="DivPortBotao">
+                        <button onmouseover="MouseNoBotaoPort(this)"
+                        onmouseout="MouseForaBotaoPort(this)">Pedir Site</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+
+
+    
+    <script src="BannerHexagonos.js"></script>
+    <script src="NavBar.js"></script>
+    <script src="Portifolio.js"></script>
+    <script src="AnimacaoChegada.js"></script>
+    <script src="ResponsividadePortifolio.js"></script>
+</body>
+</html>
+

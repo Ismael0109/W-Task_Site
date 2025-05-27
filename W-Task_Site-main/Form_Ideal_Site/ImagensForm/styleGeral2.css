@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Codec pro';
+    src: url(Fontes/codec-pro\ regular.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+    background-color: #dacbb7;
+}
+
+
