@@ -128,16 +128,16 @@
   <script>
     const tipo = document.getElementById("Opcoes");
     const outroTipo = document.getElementById("field");
-    function outroFun(tipo, outrotipo){
-    select.addEventListener('change', () => {
-    if (select.value === 'outro') {
-      fieldset.disabled = false;
+    
+    tipo.addEventListener('change', () => {
+    if (tipo.value === 'Outro Tipo') {
+      outroTipo.disabled = false;
     } else {
-      fieldset.disabled = true;
+      outroTipo.disabled = true;
   }
   });
-}
-outroFun(tipo, outrotipo);
+
+
   </script>
   <script src="BannerHexagonos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
