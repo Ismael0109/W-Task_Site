@@ -1,9 +1,5 @@
 const els = document.querySelectorAll(
-    '#DivPort1 img, #DivPort2 img, #DivPort3 img, ' +
-    '#LinhaHrzlPort1, #LinhaHrzlPort3, #LinhaHrzlPort4, ' +
-    '#LinhaHrzlPort2, #LinhaHrzlPort6, #LinhaHrzlPort5, ' +
-    '#DivPort1 .DivPortBotao button, #DivPort2 .DivPortBotao button, #DivPort3 .DivPortBotao button, ' +
-    '#DivPortConteudo1 h2, #DivPortConteudo2 h2, #DivPortConteudo3 h2'
+    '#card1, #card2, #card3, .card, .card-img-top, .card-body, #card-img-top2, #card-img-top3, #card-img-top1, #cardbody2, #cardbody3'
   );
   
   const observer = new IntersectionObserver((entries) => {
