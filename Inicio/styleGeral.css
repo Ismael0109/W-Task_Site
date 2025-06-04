@@ -63,17 +63,17 @@ button{
 }
 #cardbody1.ChegadaAtiva{
     animation: Chegada 1s forwards;
-    animation-delay: 1.8s;
+    animation-delay: 1.5s;
 }
 
 #cardbody2.ChegadaAtiva{
     animation: Chegada2 1s forwards;
-    animation-delay: 1.8s;
+    animation-delay: 1.5s;
 }
 
 #cardbody3.ChegadaAtiva{
     animation: Chegada 1s forwards;
-    animation-delay: 1.8s;
+    animation-delay: 1.5s;
 }
 
 @keyframes Chegada {
