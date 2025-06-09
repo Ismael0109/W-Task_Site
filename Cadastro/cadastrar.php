@@ -23,7 +23,10 @@ $stmt->bind_param("sssss", $nome, $email, $senha, $telefone, $nivel);
 $stmt->execute();
 
 if ($stmt->affected_rows > 0) {
-    echo "Cadastro realizado!";
+    // Redireciona com cabeçalho HTTP
+    header("Location: ../Login/index.html");
+    exit();
+    
 } else {
     echo "Erro ao cadastrar.";
 }
@@ -31,3 +34,4 @@ if ($stmt->affected_rows > 0) {
 $stmt->close();
 $conn->close();
 ?>
+

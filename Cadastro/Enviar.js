@@ -9,7 +9,7 @@ function AbrirLogin(){
     } else {
         
         alert('Cadastro Realiza!!');
-        window.open('../Login/index.html');
     }
     }
+
     

@@ -18,6 +18,9 @@ body {
     
     grid-template-rows: 1fr 9fr;
 }
+.card{
+    background-color: #dacbb7;
+}
 
 #card1{
     opacity: 0;
