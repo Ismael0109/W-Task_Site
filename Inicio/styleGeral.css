@@ -76,7 +76,7 @@ button{
 
 #cardbody3.ChegadaAtiva{
     animation: Chegada 1s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.2s;
 }
 
 @keyframes Chegada {
