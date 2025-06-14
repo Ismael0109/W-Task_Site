@@ -21,7 +21,7 @@ nav {
 #TrabalheConosco {
     color: white;
     font-family: 'Montserrat-Arabic', sans-serif;
-    font-size: 18.5px;
+    font-size: 19px;
     text-decoration: none;
     padding: 0px 15px;
     box-sizing: border-box;
@@ -29,8 +29,9 @@ nav {
     z-index: 1;
     position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
+    margin-left: 5%;
     
 }
 
