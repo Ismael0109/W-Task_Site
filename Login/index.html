@@ -86,19 +86,20 @@
 <body id="banner">
    
     <div class="form-wrapper">
-    <form class="row g-4">
+    <form class="row g-4" action="login.php" method="POST">
       <!-- Coluna Esquerda -->
       <div class="col-md-6">
         <label class="form-label">E-mail*</label>
  
-        <input type="text" class="form-control" placeholder="Digite seu E-mail"/>
+        <input type="text" class="form-control" placeholder="Digite seu E-mail"
+        name="email" required id="email"/>
  
         <label class="form-label mt-3">Senha*</label>
-        <input type="text" class="form-control" placeholder="Digite sua Nova Senha" style="color: #fff"/>
-                                         
+        <input type="password" class="form-control" placeholder="Digite sua Senha" style="color: #fff"
+        name="senha" required id="senha"/>
         
         <div class="mt-4 text-end">
-          <button type="submit" class="btn btn-enviar" onclick="AbrirLogin()">ENVIAR</button>
+          <button type="submit" class="btn btn-enviar" target="_self">ENVIAR</button>
         </div>
       </div>
  

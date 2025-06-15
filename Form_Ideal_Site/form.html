@@ -90,14 +90,20 @@
     <form class="row g-4">
       <!-- Coluna Esquerda -->
       <div class="col-md-6">
+        <!--lbl Nome da Empresa-->
         <label class="form-label">Nome da Empresa*</label>
+        
+        <!--txt Nome da Empresa-->
+        <input type="text" class="form-control" id="nomeEmpresa" placeholder="Ex: W-Tesk ltda" required/>
 
-        <input type="text" class="form-control" placeholder="Ex: W-Tesk ltda" required/>
-
+        <!--lbl CNPJ da Empresa-->
         <label class="form-label mt-3">CNPJ*</label>
-        <input type="text" class="form-control" placeholder="XX.XXX.XXX/0001-XX" required style="color: #fff"/>
+        <!--txt CNPJ da Empresa-->
+        <input type="text" class="form-control" placeholder="XX.XXX.XXX/0001-XX" required id="cnpjEmpresa" style="color: #fff"/>
 
+        <!--lbl Tipo de Empresa-->
         <label class="form-label mt-3" >Tipo de Empresa: </label>
+        <!--select Tipo de Empresa-->
         <select class="form-select" id="Opcoes">
           <option selected>Selecione</option>
           <option>E-Commerce</option>
@@ -107,8 +113,10 @@
 
         <fieldset disabled="disabled" id="field">
         <div>
+        <!--lbl Outro Tipo de Empresa-->
         <label class="form-label mt-3"> Outro Tipo de Empresa:</label>
-        <input type="text" class="form-control" placeholder="Ex: Gastronomia, Musical, Administrativa..." />
+        <!--txt Outro Tipo de Empresa-->
+        <input type="text" class="form-control" placeholder="Ex: Gastronomia, Musical, Administrativa..." id="OtrTipo"/>
         </div>
         </fieldset>
       </div>
@@ -117,10 +125,10 @@
       <div class="col-md-6 d-flex flex-column justify-content-between">
         <div>
           <label class="form-label">Descrição do Problema/Ideia do Site*</label>
-          <textarea class="form-control" rows="7" required placeholder="Descreva o objetivo que você quer através de Nossos Serviços, aplicando os Problemas Enfrentados, Suas Ideias, etc."></textarea>
+          <textarea class="form-control" rows="7" required placeholder="Descreva o objetivo que você quer através de Nossos Serviços, aplicando os Problemas Enfrentados, Suas Ideias, etc." id="txtDesc"></textarea>
         </div>
         <div class="mt-4 text-end">
-          <button type="submit" class="btn btn-enviar">ENVIAR</button>
+          <button type="submit" class="btn btn-enviar" onclick="enviarEmail()">ENVIAR</button>
         </div>
       </div>
     </form>
@@ -139,6 +147,7 @@
 
 
   </script>
+  <script src="EnvioEmail.js"></script>
   <script src="BannerHexagonos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
