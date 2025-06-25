@@ -1,6 +1,6 @@
 /* Estilos do rodapé */
 footer {
-    background-color: #333;
+    background-color: #4c071b;
     color: #fff;
     padding: 40px 0;
     margin-top: auto;
@@ -29,7 +29,7 @@ footer {
     bottom: 0;
     width: 50px;
     height: 2px;
-    background-color: #4CAF50;
+    background-color: #dacbb7;
 }
 
 .footer-section p, .footer-section a {
@@ -41,7 +41,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #4CAF50;
+    color: #dacbb7;
 }
 
 .social-links {
@@ -56,7 +56,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color: #222;
+    background-color: #3a0614;
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
