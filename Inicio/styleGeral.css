@@ -10,27 +10,49 @@ body {
     background-color: #4c071b;
 }
 
-#CorpoPortifolio{
+#CorpoPortifolio {
     width: 100%;
     background-color: #dacbb7;
-    min-height:  100vh;
+    padding: 40px 0;
     display: grid;
-    
-    grid-template-rows: 1fr 9fr;
-}
-.card{
-    background-color: #dacbb7;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-rows: auto auto; /* 2 linhas */
+    padding: 40px 5%; /* 40px em cima/embaixo, 5% nas laterais (ajuste a % conforme necessidade) */
+    gap: 20px;
+    min-height: auto;
 }
 
-#card1{
-    opacity: 0;
+/* Posicionamento dos cards */
+#card1 {
+    grid-column: 1; /* Coluna 1 */
+    grid-row: 1;    /* Linha 1 */
 }
-#card3{
-    opacity: 0;
-    
+
+#card2 {
+    grid-column: 3; /* Coluna 3 */
+    grid-row: 1;    /* Linha 1 */
 }
-#card2{
+
+#card3 {
+    grid-column: 1; /* Coluna 1 */
+    grid-row: 2;    /* Linha 2 */
+}
+.card {
+    background-color: #dacbb7;
+    height: 24rem;
+    width: 28rem;
+    margin: 20px 0; /* Margem apenas top e bottom */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
     opacity: 0;
+    position: relative; /* Remove posicionamento absoluto */
+    left: auto;
+    right: auto;
+    bottom: auto;
+    top: auto;
+}
+.card:hover {
+    transform: translateY(-5px);  /* Move o card 5px para cima */
+    transition: transform 0.3s ease; /* Suaviza o movimento */
 }
 
 #card1.ChegadaAtiva{
@@ -90,4 +112,17 @@ button{
 @keyframes Chegada3{
     0%{opacity: 0; height: 0;}
     100%{opacity: 1; height: 1;}
+}
+@media (max-width: 768px) {
+    #CorpoPortifolio {
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
+
+    #card1, #card2, #card3 {
+        grid-column: 1; /* Força todos na coluna 1 */
+    }
+
+    #card1 { grid-row: 1; }
+    #card2 { grid-row: 2; }
+    #card3 { grid-row: 3; }
 }
