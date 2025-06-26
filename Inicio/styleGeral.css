@@ -10,32 +10,56 @@ body {
     background-color: #4c071b;
 }
 
+
 #CorpoPortifolio {
     width: 100%;
     background-color: #dacbb7;
     padding: 40px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    grid-template-rows: auto auto; /* 2 linhas */
+    grid-template-rows: auto auto auto; /* 2 linhas */
     padding: 40px 5%; /* 40px em cima/embaixo, 5% nas laterais (ajuste a % conforme necessidade) */
     gap: 20px;
     min-height: auto;
+}
+#tituloPortifolio {
+    font-family: 'Montserrat-Arabic', sans-serif;
+    color: #4c071b;
+    text-align: center; /* Centralizado (melhor que justify para títulos) */
+    font-size: 2.5rem; /* Aumentei o tamanho */
+    margin: 40px 0; /* Mais espaçamento */
+    grid-row: 1;
+    grid-column: 1 / span 3; /* Ocupa as 3 colunas */
+    position: relative; /* Para o pseudo-elemento */
+    padding-bottom: 15px; /* Espaço para a linha decorativa */
+}
+
+/* Linha decorativa abaixo do título */
+#tituloPortifolio::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%; /* Começa a 25% da largura */
+    width: 50%; /* Ocupa metade do container */
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #4c071b, transparent);
+    border-radius: 3px;
 }
 
 /* Posicionamento dos cards */
 #card1 {
     grid-column: 1; /* Coluna 1 */
-    grid-row: 1;    /* Linha 1 */
+    grid-row: 2;    /* Linha 1 */
 }
 
 #card2 {
     grid-column: 3; /* Coluna 3 */
-    grid-row: 1;    /* Linha 1 */
+    grid-row: 2;    /* Linha 1 */
 }
 
 #card3 {
     grid-column: 1; /* Coluna 1 */
-    grid-row: 2;    /* Linha 2 */
+    grid-row: 3;    /* Linha 2 */
 }
 .card {
     background-color: #dacbb7;
