@@ -21,13 +21,11 @@
         <div id="menu">
             <!--<img src="ImagensInicio/icon2.png" alt="#" class="ItensMenu">-->
 <button id="login-btn" class="login-icon">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-user" id="iconSuperior"></i>
                 </button>
             <a class="ItensMenu" id="sobreNos" href="#banner" onclick='alterarSobreNos()'>Home</a>
             
-            <a class="ItensMenu" id="contatos" href="" onclick='alterarContatos()'>Sobre Nós</a>
-
-           
+            <a class="ItensMenu" id="contatos" href="#sobre" onclick='alterarContatos()'>Sobre Nós</a>
         </div>
 
 
@@ -85,7 +83,46 @@
             </div>
         </div>
     </div>
+    <!-- Seção Missão, Visão e Valores -->
+    <section id="sobre" class="mvv-container">
+        <!-- Missão -->
+        <div class="mvv-card">
+            <div class="icon">
+                <i class="fas fa-bullseye"></i>
+            </div>
+            <h2>Missão</h2>
+            <p>Oferecer soluções de vendas online modernas e práticas, com o uso de simuladores 3D, ajudando lojas de materiais de construção e outros segmentos a melhorarem a experiência de compra de seus clientes, facilitando suas escolhas.</p>
+        </div>
 
+        <!-- Visão -->
+        <div class="mvv-card">
+            <div class="icon">
+                <i class="fas fa-eye"></i>
+            </div>
+            <h2>Visão</h2>
+            <p>Tornar-se uma empresa conhecida por transformar a forma como lojas vendem pela internet, oferecendo experiências interativas e eficientes por meio de simuladores 3D e tecnologia acessível.</p>
+        </div>
+
+        <!-- Valores -->
+        <div class="mvv-card">
+            <div class="icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h2>Valores</h2>
+            <ul class="valores-list">
+                <li><i class="fas fa-check"></i> Inovação constante</li>
+                <li><i class="fas fa-check"></i> Compromisso com a qualidade e a eficiência</li>
+                <li><i class="fas fa-check"></i> Foco na experiência e satisfação do cliente</li>
+                <li><i class="fas fa-check"></i> Transparência e ética</li>
+                <li><i class="fas fa-check"></i> Responsabilidade com a tecnologia e seu impacto</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Barra separadora -->
+    <div class="separador"> </div>
+
+    <!--Rodapé-->
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -106,8 +143,8 @@
                 <p>Telefone: +55 21 99277-3125</p>
                 
                 <div class="social-links">
-                    <a href="https://w.app/9pf85x"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/wtaskbr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://w.app/9pf85x"><i id="what" class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/wtaskbr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram" id="instagram"></i></a>
                 </div>
             </div>
         </div>

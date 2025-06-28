@@ -7,7 +7,7 @@
 body {
     margin: 0;
     overflow-x: hidden;
-    background-color: #4c071b;
+    background-color: #dacbb7;
 }
 
 
@@ -123,6 +123,81 @@ button{
 #cardbody3.ChegadaAtiva{
     animation: Chegada 1s forwards;
     animation-delay: 0.2s;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* MVV Section */
+.mvv-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 5% 10%;
+}
+
+.mvv-card {
+    background: #dacbb7;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.mvv-card:hover {
+    transform: translateY(-10px);
+}
+
+.mvv-card .icon {
+    font-size: 2.5rem;
+    color: var(--vinho);
+    margin-bottom: 20px;
+}
+
+.mvv-card h2 {
+    color: var(--vinho);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.mvv-card p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.valores-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.valores-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.valores-list i {
+    color: var(--vinho);
+    margin-right: 10px;
+}
+#iconSuperior, #instagram, #what {
+    color: #fff; 
+}
+i {
+    color: #4c071b; /* Cor bege da sua paleta */
+}
+#sobre{
+    background-color: #4c071b;
+}
+/* Barra separadora*/
+.separador {
+    background-color: #dacbb7 !important; /* Cor bege da sua paleta */
+    height: 20px;
+    border: none;
 }
 
 @keyframes Chegada {
