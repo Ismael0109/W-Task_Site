@@ -7,85 +7,13 @@
     <link rel="shortcut icon" href="ImagensLogin/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styleBanner.css">
-    <style>
-        body {
-            background-color: #5e202b;
-            background-image: url(''); /* adicione um padrão ou imagem aqui se desejar */
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            }
- 
-        .form-wrapper {
-            background-color: rgba(124, 51, 60, 0.5);
-            border-radius: 20px;
-            padding: 50px;
-            width: 100%;
-            max-width: 650px;
-            height: 100%;
-            max-height: 650px;
-            color: #fff;
-            z-index: 1;
-            opacity: 1;
-            }
- 
-        .form-label {
-      font-weight: bold;
-      font-size: 20px;
-      margin-top: 30%;
-    }
- 
-        .form-control, .form-select, textarea {
-      border-radius: 20px;
-      background-color: #4a1e25;
-      color: #fff;
-      border: none;
-      width: 200%;
-      font-size: 20px;
-      margin-bottom: 10%;
-   
-    }
- 
-        .form-control:focus{
-      background-color: #4a1e25;
-      color: #fff;
-    }
- 
-        .form-control::placeholder{
-      color: #fff;
-      opacity: 0.5;
- 
-    }
-        textarea.form-control {
-      resize: none;
-    }
- 
-         .btn-enviar {
-      background-color: #e8d3c2;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      border-radius: 20px;
-      position: relative;
-      left: 22%;
-      padding: 10px 30px;
-      transition: 0.3s;
-      margin-top: 25%;
-
-    }
-
-
-        .btn-enviar:hover {
-      background-color: #d2b6a5;
-    }
-    </style>
+    <link rel="stylesheet" href="styleGeral.css">
  
 </head>
 <body id="banner">
-   
+   <!--Formulário-->
     <div class="form-wrapper">
+      <h1 id="tituloForm">Login</h1>
     <form class="row g-4" action="login.php" method="POST">
       <!-- Coluna Esquerda -->
       <div class="col-md-6">
@@ -97,15 +25,26 @@
         <label class="form-label mt-3">Senha*</label>
         <input type="password" class="form-control" placeholder="Digite sua Senha" style="color: #fff"
         name="senha" required id="senha"/>
-        
-        <div class="mt-4 text-end">
-          <button type="submit" class="btn btn-enviar" target="_self">ENVIAR</button>
-        </div>
       </div>
- 
-       
-    </form>
+<div class="row links-row"> <!-- Linha do Bootstrap -->
+  <div class="col-6 text-start"> <!-- Coluna esquerda -->
+    <a href="../Cadastro/index.html" class="login-link">
+      Não tem Conta? <strong>Cadastre-se Já!</strong>
+    </a>
   </div>
+  <div class="col-6 text-end"> <!-- Coluna direita -->
+    <a href="../Esqueceu_Senha/index.html" class="login-link">
+      <strong>Esqueci Minha Senha</strong>
+    </a>
+  </div>
+</div>
+      
+ 
+       <div class="text-center"> <!-- Alterado para centralizar -->
+    <button type="submit" class="btn btn-enviar">ENVIAR</button>
+</div>
+    </form>
+    </div>
   <script src="BannerHexagonos.js"></script>
   <script src="Enviar.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>

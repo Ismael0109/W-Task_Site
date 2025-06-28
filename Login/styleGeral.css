@@ -1,0 +1,106 @@
+    body {
+                background-color: #5e202b;
+                background-image: url(''); /* adicione um padrão ou imagem aqui se desejar */
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                }
+#tituloForm {
+    font-family: 'Montserrat-Arabic', sans-serif;
+    color: #d2b6a5;
+    text-align: center; /* Centralizado (melhor que justify para títulos) */
+    font-size: 2.5rem; /* Aumentei o tamanho */
+    position: relative; /* Para o pseudo-elemento */
+    
+}
+
+    
+            .form-wrapper {
+                background-color: rgba(124, 51, 60, 0.5);
+                border-radius: 20px;
+                padding: 50px;
+                width: 100%;
+                max-width: 650px;
+                height: 100%;
+                max-height: 650px;
+                color: #fff;
+                z-index: 1;
+                opacity: 1;
+                }
+    
+            .form-label {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 30%;
+        }
+    
+            .form-control, .form-select, textarea {
+        border-radius: 20px;
+        background-color: #4a1e25;
+        color: #fff;
+        border: none;
+        width: 200%;
+        font-size: 20px;
+        margin-bottom: 10%;
+    
+        }
+    
+            .form-control:focus{
+        background-color: #4a1e25;
+        color: #fff;
+        }
+    
+            .form-control::placeholder{
+        color: #fff;
+        opacity: 0.5;
+    
+        }
+            textarea.form-control {
+        resize: none;
+        }
+    
+            .btn-enviar {
+    background-color: #e8d3c2;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    transition: 0.3s;
+    display: block; /* Transforma em bloco para centralização */
+    margin: 25px auto 0; /* Centraliza horizontalmente */
+    width: fit-content; /* Ajusta largura ao conteúdo */
+}
+
+.btn-enviar:hover {
+    background-color: #d2b6a5;
+    transform: scale(1.05); /* Efeito de zoom suave */
+}
+.links-row {
+  margin: 0 0;
+  width: 100%;
+}
+
+.login-link {
+  color: #e8d3c2 !important;
+  text-decoration: none !important;
+  font-size: 0.9rem;
+  white-space: nowrap; /* Impede a quebra de linha */
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.login-link:hover {
+  text-decoration: underline !important;
+}
+
+
+/* Responsividades */
+@media (max-width: 576px) {
+    .btn-enviar {
+        width: 100%;
+        max-width: 200px;
+    }
+}
