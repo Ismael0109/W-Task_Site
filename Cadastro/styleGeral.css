@@ -42,6 +42,14 @@ body {
             z-index: 1;
             opacity: 1;
             }
+#tituloForm {
+    font-family: 'Montserrat-Arabic', sans-serif;
+    color: #d2b6a5;
+    text-align: center; /* Centralizado (melhor que justify para títulos) */
+    font-size: 2.5rem; /* Aumentei o tamanho */
+    position: relative; /* Para o pseudo-elemento */
+    
+}
 
         .form-label {
       font-weight: bold;
