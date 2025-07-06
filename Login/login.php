@@ -2,7 +2,7 @@
 session_start(); // Inicia a sessão
 
 // Conexão com o banco
-$conn = new mysqli("localhost", "root", "4840Senai**", "wtask");
+$conn = new mysqli("localhost", "root", "4840Senai*", "wtask");
 
 if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
